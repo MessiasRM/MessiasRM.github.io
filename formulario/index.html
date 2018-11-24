@@ -2,12 +2,79 @@
 <html>
 <head>
 	<title>Formulario do Google</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="aparencia.css">
 </head>
 <body>
 	<form action="https://www.google.com.br/search?" method="get">
-		Pesquisar:<input type="text" name="q" required>
-		<input type="submit" name="Buscar" value="Buscar">
-		<input type="reset" name="Limpar" value="Limpar">
+		<fieldset>
+			<legend>Formulário</legend>
+			<p><label for="q">Pesquisar:</label>
+			<input type="text" name="q" required>
+			<input type="submit" name="Buscar" value="Buscar">
+			<input type="image" height="30" src="lupa.png">
+			<input type="reset" name="Limpar" value="Limpar"></p>
+			Email: <input type="email" name="email">
+			Numero: <input type="number" name="numero" min="0" max="100" step="2">
+			Range: <input type="range" name="range" min="0" max="10">
+			Data: <input type="datetime-local" name="data">
+			Cor: <input type="color" name="cor">
+			<p>
+				Texto:<textarea rows="5" cols="40" spellcheck="true" pattern="(?=.*\d(?=.*a-z)"></textarea>
+			</p>
+		</fieldset>
+
+		<br>
+
+		<fieldset>
+			<legend>Campos de Seleção</legend>
+			<h5>Você deseja trabalhar na empresa Webmaster?</h5>		
+			<input type="radio" name="radiobutton" value="Sim">Sim
+			<br>
+			<input type="radio" name="radiobutton" value="Não">Não
+			<br>
+			<input type="radio" name="radiobutton" value="Talvez">Talvez
+			<br>
+			<input type="radio" name="radiobutton" value="Quem sabe">Quem sabe
+			<br>
+
+			<h5>O que você deseja aprender?</h5>
+			<input type="checkbox" name="checkboxbutton" value="CSS">CSS
+			<input type="checkbox" name="checkboxbutton" value="HTML">HTML
+			<input type="checkbox" name="checkboxbutton" value="JavaScript">JS
+			<input type="checkbox" name="checkboxbutton" value="PHP">PHP
+		</fieldset>
+
+		<fieldset>
+			<legend>Menus</legend>
+			<h4>Menu DropDown</h4>
+			<select>
+				<optgroup label="Grupo 1">
+					<option value="op1">op1</option>
+					<option value="op2">op2</option>
+					<option value="op3">op3</option>
+				</optgroup>
+				<optgroup label="Grupo 2">
+					<option value="op1">op1</option>
+					<option value="op2">op2</option>
+					<option value="op3">op3</option>
+				</optgroup>
+			</select>
+
+			<h4>Menu DropDown</h4>
+			<select size="4" multiple="multiple">
+				<optgroup label="Grupo 1">
+					<option value="op1">op1</option>
+					<option value="op2">op2</option>
+					<option value="op3">op3</option>
+				</optgroup>
+				<optgroup label="Grupo 2">
+					<option value="op1">op1</option>
+					<option value="op2">op2</option>
+					<option value="op3">op3</option>
+				</optgroup>
+			</select>
+		</fieldset>
 	</form>
 
 </body>
