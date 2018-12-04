@@ -1,8 +1,20 @@
-		body {
-			background-color: #CACACA;
-			font-family: Century Schoolbook L, Verdana, Arial, sans-serif;
-			font-size: 16px;
-		}
-		legend{
-			color: #FF0000;
-		}
+body {
+	background-image: url(http://www.jakpost.travel/imgfiles/full/12/121364/minimalist-black-and-white-wallpaper.jpg);
+	background-color: #CACACA;
+	font-family: 'PT Serif', serif;
+	font-size: 16px;
+	margin: 20px 20px 20px 20px;
+	border: 1px solid #000000;
+	border-radius: 5px 5px 5px 5px;
+}
+legend{
+	color: #FF0000;
+}
+
+h1 strong{
+	color: #FF0000
+}
+
+p:hover{
+	background-color: #CACACA;
+}
