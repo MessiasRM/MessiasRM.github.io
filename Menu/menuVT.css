@@ -8,11 +8,6 @@ ul{
 	width: 300px;
 }
 
-/* HORIZONTAL (width: auto;)
-li { 
-	display: inline; 
-}*/
-
 ul li a{
 	display: block;
 	text-decoration: none;
